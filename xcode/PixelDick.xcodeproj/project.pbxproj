@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		47CD6DD0A6B34C9F8F8F73BE /* PixelDickApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D297B83547D64A8398491D82 /* PixelDickApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
+		5C6FFA3B35B14273BEA5D5FF /* UIElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A46219CD86B412E9D33FAA1 /* UIElement.cpp */; };
+		5F21544AB4A7452799855436 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C1545F1D054DFC92FCF32E /* Label.cpp */; };
+		76FDC91AB9EF48A7B629B2FD /* UIController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3E548DFF86423393D8F6EC /* UIController.cpp */; };
+		7A2FC89F556042C9931168C3 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = D0F0D379675D41F0ABBF3E1D /* CinderApp.icns */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B6BD97140C3445118C39E9DA /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B841EA5C5D42458894A1F554 /* Button.cpp */; };
+		B81BCA73341742D693C0BFBE /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBF5CCDD6974BDB846E34B4 /* Slider.cpp */; };
+		D8C1F4EB18BAEE4300883582 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C1F4EA18BAEE4300883582 /* AVFoundation.framework */; };
+		D8C1F4ED18BAEE4700883582 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C1F4EC18BAEE4700883582 /* CoreMedia.framework */; };
+		D8FF80B318AC2A0F00B90F87 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FF80B218AC2A0F00B90F87 /* QuickTime.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1BABEBF60E52401CB7528BC0 /* PixelDick_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = PixelDick_Prefix.pch; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39F64828A1004DDFA5632EEF /* UIElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIElement.h; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/include/UIElement.h"; sourceTree = "<group>"; };
+		3B81EBD90C2346D695FBC57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3E548DFF86423393D8F6EC /* UIController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = UIController.cpp; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/src/UIController.cpp"; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		78C7F7E938304A6DA34245B5 /* Slider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Slider.h; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/include/Slider.h"; sourceTree = "<group>"; };
+		79BEBAD8AEDA4192ABF45E8F /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Button.h; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/include/Button.h"; sourceTree = "<group>"; };
+		7A46219CD86B412E9D33FAA1 /* UIElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = UIElement.cpp; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/src/UIElement.cpp"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* PixelDick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelDick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C1545F1D054DFC92FCF32E /* Label.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Label.cpp; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/src/Label.cpp"; sourceTree = "<group>"; };
+		A36C953994784185B6036BC3 /* Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Label.h; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/include/Label.h"; sourceTree = "<group>"; };
+		AEBF5CCDD6974BDB846E34B4 /* Slider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Slider.cpp; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/src/Slider.cpp"; sourceTree = "<group>"; };
+		B841EA5C5D42458894A1F554 /* Button.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = Button.cpp; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/src/Button.cpp"; sourceTree = "<group>"; };
+		BBCE8033D7954AF2BC5EBC20 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		D0F0D379675D41F0ABBF3E1D /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		D297B83547D64A8398491D82 /* PixelDickApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = PixelDickApp.cpp; path = ../src/PixelDickApp.cpp; sourceTree = "<group>"; };
+		D8C1F4EA18BAEE4300883582 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D8C1F4EC18BAEE4700883582 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D8C1F4EE18BAF02F00883582 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D8FF80B218AC2A0F00B90F87 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		E1C25393F20D451084582B5D /* UIController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UIController.h; path = "../../../Cinder/Cinder/blocks/Cinder-MinimalUI/include/UIController.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C1F4ED18BAEE4700883582 /* CoreMedia.framework in Frameworks */,
+				D8C1F4EB18BAEE4300883582 /* AVFoundation.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				D8FF80B318AC2A0F00B90F87 /* QuickTime.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				F96A1AFD5CC04230A074D366 /* MinimalUI */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D297B83547D64A8398491D82 /* PixelDickApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C1F4EC18BAEE4700883582 /* CoreMedia.framework */,
+				D8C1F4EA18BAEE4300883582 /* AVFoundation.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				D8FF80B218AC2A0F00B90F87 /* QuickTime.framework */,
+				5323E6B50EAFCA7E003A9687 /* QTKit.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* PixelDick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PixelDick */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PixelDick;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BBCE8033D7954AF2BC5EBC20 /* Resources.h */,
+				1BABEBF60E52401CB7528BC0 /* PixelDick_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0D379675D41F0ABBF3E1D /* CinderApp.icns */,
+				3B81EBD90C2346D695FBC57D /* Info.plist */,
+				D8C1F4EE18BAF02F00883582 /* README.md */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		348B626E04E345A8ADBC48E7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				79BEBAD8AEDA4192ABF45E8F /* Button.h */,
+				A36C953994784185B6036BC3 /* Label.h */,
+				78C7F7E938304A6DA34245B5 /* Slider.h */,
+				E1C25393F20D451084582B5D /* UIController.h */,
+				39F64828A1004DDFA5632EEF /* UIElement.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		5497DAB369114BF1B930D486 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B841EA5C5D42458894A1F554 /* Button.cpp */,
+				96C1545F1D054DFC92FCF32E /* Label.cpp */,
+				AEBF5CCDD6974BDB846E34B4 /* Slider.cpp */,
+				4D3E548DFF86423393D8F6EC /* UIController.cpp */,
+				7A46219CD86B412E9D33FAA1 /* UIElement.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		F96A1AFD5CC04230A074D366 /* MinimalUI */ = {
+			isa = PBXGroup;
+			children = (
+				5497DAB369114BF1B930D486 /* src */,
+				348B626E04E345A8ADBC48E7 /* include */,
+			);
+			name = MinimalUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* PixelDick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PixelDick" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelDick;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PixelDick;
+			productReference = 8D1107320486CEB800E47090 /* PixelDick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PixelDick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PixelDick */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* PixelDick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A2FC89F556042C9931168C3 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CD6DD0A6B34C9F8F8F73BE /* PixelDickApp.cpp in Sources */,
+				B6BD97140C3445118C39E9DA /* Button.cpp in Sources */,
+				5F21544AB4A7452799855436 /* Label.cpp in Sources */,
+				B81BCA73341742D693C0BFBE /* Slider.cpp in Sources */,
+				76FDC91AB9EF48A7B629B2FD /* UIController.cpp in Sources */,
+				5C6FFA3B35B14273BEA5D5FF /* UIElement.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PixelDick_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_NAME = PixelDick;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PixelDick_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_NAME = PixelDick;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../Cinder/Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"$(CINDER_PATH)/blocks/Cinder-MinimalUI/include\"";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../Cinder/Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include \"$(CINDER_PATH)/blocks/Cinder-MinimalUI/include\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PixelDick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PixelDick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
