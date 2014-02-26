@@ -37,6 +37,7 @@ private:
     void setDisplayState(int state);
     gl::Texture createGridTexture(int stride, Color color, Color colorAlt);
     void cueHit();
+	void displayChange();
 
     int mDisplayState;
     Color mColor;
@@ -54,14 +55,15 @@ void PixelDickApp::prepareSettings(Settings* settings) {
 }
 
 void PixelDickApp::setup() {
-	mFont = gl::TextureFont::create(Font("Helvetica", 96 * 2), gl::TextureFont::Format().enableMipmapping());
+	mFont = gl::TextureFont::create(Font("Helvetica", 64 * 2), gl::TextureFont::Format().enableMipmapping());
     mAudioSource = audio::load(loadResource(RES_BLOOP));
 
-    setDisplayState(DisplayState::White);
+    // tickle to create grid texture
+    displayChange();
 
-    // use size in points, density independent
-    int stride = 60 * getWindowContentScale();
-    mCheckerBoardTexture = createGridTexture(stride, Color::black(), Color::white());
+    getWindow()->getSignalDisplayChange().connect(std::bind(&PixelDickApp::displayChange, this));
+
+    setDisplayState(DisplayState::White);
 }
 
 void PixelDickApp::update() {}
@@ -199,6 +201,12 @@ gl::Texture PixelDickApp::createGridTexture(int stride, Color color, Color color
 void PixelDickApp::cueHit() {
     audio::Output::play(mAudioSource);
     setDisplayState(mDisplayState + 1);
+}
+
+void PixelDickApp::displayChange() {
+    // use size in points, density independent
+    int stride = 60 * getWindowContentScale();
+    mCheckerBoardTexture = createGridTexture(stride, Color::black(), Color::white());
 }
 
 CINDER_APP_NATIVE(PixelDickApp, RendererGl)
