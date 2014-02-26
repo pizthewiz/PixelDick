@@ -78,7 +78,7 @@ void PixelDickApp::draw() {
         gl::draw(mCheckerBoardTexture, getDisplay()->getBounds());
 
         // countdown
-        double remainingSeconds = (4 * 60) - getElapsedSeconds() - mGridEpoch;
+        double remainingSeconds = (4 * 60.0) - (getElapsedSeconds() - mGridEpoch);
         int minutes = (int)floor(remainingSeconds / 60.0f);
         int seconds = (int)floor(remainingSeconds) % 60;
 
