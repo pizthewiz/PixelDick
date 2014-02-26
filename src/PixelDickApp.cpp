@@ -2,8 +2,12 @@
 #include "cinder/app/AppNative.h"
 #include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
+#include "cinder/gl/TextureFont.h"
 #include "cinder/Timeline.h"
 #include "cinder/audio/Output.h"
+
+#include <sstream>
+#include <boost/format.hpp>
 
 #include "Resources.h"
 
@@ -39,6 +43,8 @@ private:
 	audio::SourceRef mAudioSource;
     gl::Texture mCheckerBoardTexture;
     ci::TimelineRef mTimeline;
+    gl::TextureFontRef mFont;
+    double mGridEpoch;
 };
 
 void PixelDickApp::prepareSettings(Settings* settings) {
@@ -48,6 +54,7 @@ void PixelDickApp::prepareSettings(Settings* settings) {
 }
 
 void PixelDickApp::setup() {
+	mFont = gl::TextureFont::create(Font("Helvetica", 96 * 2), gl::TextureFont::Format().enableMipmapping());
     mAudioSource = audio::load(loadResource(RES_BLOOP));
 
     setDisplayState(DisplayState::White);
@@ -67,7 +74,22 @@ void PixelDickApp::draw() {
     if (mDisplayState == DisplayState::Grid) {
         gl::color(Color::white());
         gl::draw(mCheckerBoardTexture, getDisplay()->getBounds());
-        // TODO - countdown
+
+        // countdown
+        double remainingSeconds = (4 * 60) - getElapsedSeconds() - mGridEpoch;
+        int minutes = (int)floor(remainingSeconds / 60.0f);
+        int seconds = (int)floor(remainingSeconds) % 60;
+
+        stringstream ss;
+        ss << boost::format("%02d:%02d") % minutes % seconds;
+
+        string s = ss.str();
+        Vec2f stringSize = mFont->measureString(s) * 0.5f;
+
+        gl::enableAlphaBlending();
+            gl::color(1.0f, 0.125f, 1.0f, 1.0f);
+            mFont->drawString(s, Vec2f((getWindowWidth() - stringSize.x) / 2.0f, stringSize.y + 12), gl::TextureFont::DrawOptions().scale(0.5f).pixelSnap(false));
+        gl::disableAlphaBlending();
     } else {
         gl::color(mColor);
         gl::drawSolidRect(Rectf(getWindowBounds()));
@@ -130,6 +152,7 @@ void PixelDickApp::setDisplayState(int state) {
             mTimeline = Timeline::create();
             timeline().add(mTimeline);
             mTimeline->add(boost::bind(&PixelDickApp::cueHit, this), mTimeline->getCurrentTime() + 4 * 60);
+            mGridEpoch = getElapsedSeconds();
             break;
         case DisplayState::Black:
             mColor = Color(0, 0, 0);
