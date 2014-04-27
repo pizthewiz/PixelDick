@@ -51,7 +51,6 @@ private:
 void PixelDickApp::prepareSettings(Settings* settings) {
     settings->enableHighDensityDisplay();
     settings->prepareWindow(Window::Format().fullScreenButton());
-    // TODO - go fullscreen by default?
 }
 
 void PixelDickApp::setup() {
@@ -75,7 +74,8 @@ void PixelDickApp::draw() {
 
     if (mDisplayState == DisplayState::Grid) {
         gl::color(Color::white());
-        gl::draw(mCheckerBoardTexture, getDisplay()->getBounds());
+
+        gl::draw(mCheckerBoardTexture, getWindowBounds(), getWindowBounds());
 
         // countdown
         double remainingSeconds = (4 * 60.0) - (getElapsedSeconds() - mGridEpoch);
@@ -179,8 +179,7 @@ void PixelDickApp::setDisplayState(int state) {
 }
 
 gl::Texture PixelDickApp::createGridTexture(int stride, Color color, Color colorAlt) {
-    Area scaledDisplayBounds = Area(Vec2f(0.0f, 0.0f), Vec2i(getDisplay()->getWidth() * getWindowContentScale(), getDisplay()->getHeight() * getWindowContentScale()));
-    Surface8u surface = Surface8u(scaledDisplayBounds.getWidth(), scaledDisplayBounds.getHeight(), false);
+    Surface8u surface = Surface8u(stride * 2, stride * 2, false);
 
     Surface::Iter outputIter(surface.getIter());
     while(outputIter.line()) {
@@ -207,6 +206,7 @@ void PixelDickApp::displayChange() {
     // use size in points, density independent
     int stride = 60 * getWindowContentScale();
     mCheckerBoardTexture = createGridTexture(stride, Color::black(), Color::white());
+    mCheckerBoardTexture.setWrap(GL_REPEAT, GL_REPEAT);
 }
 
 CINDER_APP_NATIVE(PixelDickApp, RendererGl)
