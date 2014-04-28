@@ -75,7 +75,9 @@ void PixelDickApp::draw() {
     if (mDisplayState == DisplayState::Grid) {
         gl::color(Color::white());
 
-        gl::draw(mCheckerBoardTexture, getWindowBounds(), getWindowBounds());
+        Area windowBounds = getWindowBounds();
+        Area sourceWindowBounds = Area(windowBounds.getUL(), windowBounds.getLR() * getWindowContentScale());
+        gl::draw(mCheckerBoardTexture, sourceWindowBounds, windowBounds);
 
         // countdown
         double remainingSeconds = (4 * 60.0) - (getElapsedSeconds() - mGridEpoch);
